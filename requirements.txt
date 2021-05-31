@@ -2,3 +2,5 @@ fastapi==0.65.1
 uvicorn==0.13.4
 Jinja2==3.0.1
 aiofiles==0.7.0
+tensorflow>=2.4.0
+python-multipart==0.0.5

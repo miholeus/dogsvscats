@@ -457,6 +457,10 @@ p.u-small-text {
     margin-bottom: 20px;
 }
 
+.dropzone {
+    border-style: dashed;
+}
+
 @media (min-width: 1200px) {
     .u-header {
         background-image: none;

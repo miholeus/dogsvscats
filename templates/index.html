@@ -6,12 +6,15 @@
   <meta name="keywords" content="Cat Care">
   <meta name="description" content="">
   <meta name="page_type" content="np-template-header-footer-from-plugin">
-  <title>Page 8</title>
+  <title>Dogs VS Cats</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='/dropzone.min.css')}}" media="screen">
   <link rel="stylesheet" href="{{ url_for('static', path='/styles.css')}}" media="screen">
   <script
           src="https://code.jquery.com/jquery-1.12.4.min.js"
           integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
           crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', path='/dropzone.min.js') }}"></script>
+  <script src="{{ url_for('static', path='/app.js') }}"></script>
   <link id="u-theme-google-font" rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
   <link id="u-page-google-font" rel="stylesheet"
@@ -229,8 +232,21 @@
               <a href="#upload-btn"
                  class="u-active-none u-border-1 u-border-grey-75 u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-1">below</a></b>
             </p>
-            <a href="#" id="upload-btn"
-               class="u-active-white u-btn u-btn-rectangle u-button-style u-custom-font u-font-oswald u-hover-white u-palette-4-base u-radius-0 u-btn-2">Upload</a>
+            <div>
+              <form class="dropzone" id="dropzone">
+                <div class="dz-message needsclick">
+                  <img src="{{ url_for('static', path='/upload.png') }}" width="50vw" height="50vw"><br>
+                  <span class="note needsclick">Drop files here or click to upload</span>
+                </div>
+              </form>
+            </div>
+            <a href="#" id="classify-btn"
+               class="u-active-white u-btn u-btn-rectangle u-button-style u-custom-font u-font-oswald u-hover-white u-palette-4-base u-radius-0 u-btn-2">Classify</a>
+
+            <div class="error" id="classification-error" >
+              <p>Can't classify image. Classifier was not able to detect cat or dog properly</p>
+            </div>
+            <div id="classification-results"></div>
           </div>
         </div>
         <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-28 u-image-1">
