@@ -24,7 +24,7 @@ function init() {
         if (file.status !== "error") {
             $("#classification-error").hide();
             $("#classification-results").html("this is a cat").show();
-            dz.removeFile(file);
+            // dz.removeFile(file);
         }
     });
     dz.on("error", function(file, error, xhr) {
