@@ -171,9 +171,14 @@ section.u-image, .u-sheet.u-image, .u-group.u-image, .u-layout-cell.u-image {
 }
 
 .u-section-2 {
-    background-image: url('static/background.jpeg');
     background-position: 50% 50%;
     min-height: 542px;
+}
+.cat-bg {
+    background-color: rgb(221, 239, 251);
+}
+.dog-bg {
+    background: linear-gradient(90deg, rgba(198, 154, 115, 1), rgba(222, 210, 199, .1) 70%);
 }
 
 .u-overlap.u-overlap-transparent .u-header, .u-image, .u-gradient {
@@ -250,7 +255,12 @@ section > *, header > *, footer > *, .u-sheet > * {
 
 .u-section-2 .u-image-1 {
     min-height: 698px;
-    background-image: url('static/cat.jpeg');
+    background-image: url('cat.jpeg');
+    background-position: 50% 50%;
+}
+.u-section-2 .u-image-2 {
+    min-height: 698px;
+    background-image: url('dog.jpeg');
     background-position: 50% 50%;
 }
 
@@ -263,7 +273,7 @@ section > *, header > *, footer > *, .u-sheet > * {
     text-transform: uppercase;
     letter-spacing: normal;
     font-weight: 700;
-    font-family: "Archivo Narrow";
+    font-family: "Archivo Narrow", system-ui;
     margin: 0;
 }
 
@@ -283,6 +293,11 @@ section > *, header > *, footer > *, .u-sheet > * {
 
 .u-section-2 .u-text-4 {
     margin: 20px 0 0;
+}
+
+.u-section-2 .u-btn-1 {
+    border-style: none none solid;
+    padding: 0;
 }
 
 .u-section-2 .u-btn-2 {
