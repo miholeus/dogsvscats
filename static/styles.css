@@ -87,66 +87,12 @@ section > *, header > *, footer > *, .u-sheet > * {
     position: relative;
 }
 
-.u-responsive-xl .u-menu, .u-responsive-lg .u-menu, .u-responsive-md .u-menu, .u-responsive-sm .u-menu, .u-responsive-xs .u-menu {
-    opacity: 1;
-}
-
-.u-menu, .u-popupmenu-items {
-    display: table;
-    white-space: nowrap;
-    position: relative;
-    line-height: 1;
-}
-
-.u-menu {
-    opacity: 0;
-}
-
 .u-valign-middle > *, .u-valign-top > *, .u-valign-bottom > * {
     flex-shrink: 0;
 }
 
 section > *, header > *, footer > *, .u-sheet > * {
     position: relative;
-}
-
-.menu-collapse {
-    display: none;
-    border: none;
-    z-index: 1;
-}
-
-.u-nav-item a.u-nav-link, .menu-collapse a.u-nav-link {
-    color: inherit;
-}
-
-.menu-collapse .u-nav-link {
-    text-decoration: none !important;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    font-size: calc(1em + 8px);
-}
-
-.u-nav-link, .u-nav-link:hover, .u-nav-link:focus {
-    text-decoration: none;
-}
-
-.u-nav-link {
-    display: block;
-    white-space: nowrap;
-    font-size: inherit;
-    font-family: inherit;
-    line-height: inherit;
-    letter-spacing: inherit;
-    text-transform: inherit;
-    font-style: inherit;
-    font-weight: inherit;
-    text-decoration: none;
-    border: 0 none transparent;
-    outline-width: 0;
-    background-color: transparent;
-    margin: 0;
-    -webkit-text-decoration-skip: objects;
 }
 
 .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header :not(.u-nav-item) > a, .u-gradient > .u-container-layout > a, .u-image:not(.u-shading) > .u-container-layout > a, a {
@@ -489,10 +435,6 @@ p.u-small-text {
         width: 1140px;
     }
 
-    .u-header .u-menu-1 {
-        margin: -32px 0 22px auto;
-    }
-
     .u-footer {
         background-image: none;
     }
@@ -518,11 +460,6 @@ p.u-small-text {
 
     .u-sheet {
         width: 340px;
-    }
-
-    .u-header .u-menu-1 {
-        width: auto;
-        margin: -32px 0 22px auto;
     }
 
     .u-section-2 {

@@ -1,2 +1,2 @@
 run:
-	poetry run uvicorn main:app --host 0.0.0.0 --port 8080
+	poetry run uvicorn main:app --host 0.0.0.0 --port 8080 --reload
