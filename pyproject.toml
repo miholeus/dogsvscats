@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "dogsvscats"
+version = "0.1.0"
+description = ""
+authors = ["miholeus"]
+packages = [
+    { include="main", from="." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.70.0"
+uvicorn = "^0.15.0"
+Jinja2 = "^3.0.2"
+aiofiles = "^0.7.0"
+python-multipart = "^0.0.5"
+tensorflow = "^2.4.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+server = "app.main:server"
