@@ -6,6 +6,9 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+from util import load_artifacts, predict
+load_artifacts()
+
 dir_path = os.path.dirname(os.path.realpath(__file__))
 app = FastAPI()
 
@@ -41,3 +44,8 @@ def read_root(request: Request):
 def predict(image: UploadFile = File(...)):
     return {"filename": image.filename}
 
+
+def server():
+    """Launched with `poetry run server` at root level"""
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
